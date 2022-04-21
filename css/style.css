@@ -637,10 +637,9 @@ img {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.socialmedia-link:hover,
-.socialmedia-link:focus {
+.page-footer .socialmedia-link:hover,
+.page-footer .socialmedia-link:focus {
   background-color: var(--social-color);
-  transform: scale(1.2) translateY(-3px);
 }
 
 .footer-icon {
