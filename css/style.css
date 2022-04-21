@@ -479,7 +479,7 @@ img {
   height: 44px;
   color: var(--icon-color);
   border-radius: 50%;
-  transition-property: color, background-color;
+  transition-property: color, background-color, transform;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic-bezier);
 }
@@ -493,6 +493,7 @@ img {
 
 .socialmedia-link:hover,
 .socialmedia-link:focus {
+  transform: scale(1.2) translateY(-3px);
   color: var(--primary-bg-t-color);
   background-color: var(--social-color);
 }
