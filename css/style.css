@@ -919,7 +919,7 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-bg-t-color);
-  transition-property: color, background-color, border;
+  transition-property: color, background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic-bezier);
   cursor: pointer;
@@ -927,9 +927,8 @@ img {
 
 .close-btn:hover,
 .close-btn:focus {
-  color: var(--primary-bg-t-color);
-  background-color: var(--color-4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  background-color: var(--primary-bg-t-color);
 }
 
 .close-icon {
@@ -1041,11 +1040,11 @@ img {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.modal-form-checkbox:focus + .custom-checkbox > .checkbox-icon {
+.modal-form-checkbox:checked + .custom-checkbox > .checkbox-icon {
   fill: var(--primary-bg-t-color);
 }
 
-.modal-form-checkbox:focus + .custom-checkbox {
+.modal-form-checkbox:checked + .custom-checkbox {
   border-color: transparent;
   background-color: var(--accent-color);
 }
