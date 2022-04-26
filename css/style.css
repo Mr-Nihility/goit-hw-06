@@ -108,9 +108,11 @@ img {
   margin: -1px;
 }
 
-/*====================================================================================================================================================== */
-
-/* шапка сайта */
+/* 
+==========================================
+| header
+==========================================
+*/
 
 .hat {
   border-bottom: 1px solid #ececec;
@@ -260,8 +262,11 @@ img {
   text-align: center;
   color: var(--secondary-color);
 }
-
-/* герои  */
+/* 
+==========================================
+| hero 
+==========================================
+*/
 .hero {
   width: 1600px;
   margin-left: auto;
@@ -306,8 +311,11 @@ img {
   color: var(--primary-bg-t-color);
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
-/* кнопка  "героев"*/
+/* 
+==========================================
+| hero button
+==========================================
+*/
 
 .button {
   padding: 10px 32px;
@@ -332,10 +340,14 @@ img {
   color: var(--primary-bg-t-color);
   background-color: var(--social-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transform: scale(1.1) translateY(-5px);
+  transform: scale(1.1) translateY(-2px);
 }
 
-/* преимущества */
+/* 
+==========================================
+| features
+==========================================
+*/
 
 .section-advance {
   padding-bottom: 47px;
@@ -383,7 +395,11 @@ img {
   line-height: 1.71;
 }
 
-/* чем мы занимаемся  */
+/* 
+==========================================
+| occupation
+==========================================
+*/
 
 .section-occupation {
   padding-top: 47px;
@@ -415,7 +431,11 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* наша команда */
+/* 
+==========================================
+| team
+==========================================
+*/
 
 .team-list {
   display: flex;
@@ -480,7 +500,7 @@ img {
 
 .socialmedia-link:hover,
 .socialmedia-link:focus {
-  transform: scale(1.2) translateY(-3px);
+  transform: scale(1.09) translateY(-2px);
   color: var(--primary-bg-t-color);
   background-color: var(--social-color);
 }
@@ -503,9 +523,11 @@ img {
   margin-bottom: 16px;
 }
 
-/* ============================================================================================================================================================ */
-
-/* client */
+/* 
+==========================================
+| clients
+==========================================
+*/
 
 .client-list {
   display: flex;
@@ -520,9 +542,10 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
-  transition-property: color, border;
+  transition-property: color, border, transform;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic-bezier);
+  outline: transparent;
 }
 
 .client-item:not(:last-child) {
@@ -540,11 +563,14 @@ img {
 .client-link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
+  transform: scale(1.09);
 }
 
-/* ======================================================================================================================================================================================================================================= */
-
-/* футер */
+/* 
+==========================================
+| footer
+==========================================
+*/
 
 .page-footer {
   background-color: var(--seconadary-bg-color);
@@ -608,6 +634,7 @@ img {
 /* section with socialmedia link */
 
 .subtitle {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -636,9 +663,84 @@ img {
   fill: var(--primary-bg-t-color);
 }
 
+/* 
+==========================================
+| footer-form
+==========================================
+*/
+
+.subsribe-form {
+  max-width: 570px;
+  margin-left: auto;
+}
+
+.subsribe-title {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-bg-t-color);
+}
+
+.subsribe-group {
+  display: flex;
+}
+
+.subsribe-field {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subsribe-field:not(:placeholder-shown) {
+  color: var(--primary-bg-t-color);
+}
+
+.subsribe-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--primary-bg-t-color);
+  transition-property: color, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.subsribe-button:hover {
+  background-color: var(--social-color);
+  transform: scale(1.02) translateY(-1px);
+}
+.subcribe-icon {
+  display: block;
+  fill: currentColor;
+  margin-left: 10px;
+}
+
 /* ====================================================================================================================================================================================================================================== */
 
-/* портофолио */
+/* 
+==========================================
+| portfolio
+==========================================
+*/
 
 .portfolio-title {
   margin: 0px;
@@ -763,7 +865,12 @@ img {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* =====================modal-window=================================== */
+/* 
+==========================================
+| modal-window
+==========================================
+*/
+/* ======================================================== */
 .back-drop {
   position: fixed;
   top: 0;
@@ -791,7 +898,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+
+  padding: 40px;
   background-color: var(--primary-bg-t-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -799,8 +907,8 @@ img {
 }
 .close-btn {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -836,4 +944,143 @@ img {
   transform: scale(1.05);
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* 
+==========================================
+| modal-form
+==========================================
+*/
+
+.modal-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.modal-form-label {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-input,
+.modal-form-textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition-property: border-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.modal-form-input:focus + .modal-icon {
+  color: var(--accent-color);
+}
+
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.modal-form-input {
+  padding: 10px 10px 10px 40px;
+}
+
+.modal-textarea {
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  transition-property: border-color, background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.checkbox-icon {
+  fill: transparent;
+  flex-shrink: 0;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.modal-form-checkbox:focus + .custom-checkbox > .checkbox-icon {
+  fill: var(--primary-bg-t-color);
+}
+
+.modal-form-checkbox:focus + .custom-checkbox {
+  border-color: transparent;
+  background-color: var(--accent-color);
+}
+
+.modal-chexbox-title {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-right: 4px;
+}
+
+.modal-form-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--primary-bg-t-color);
+  transition-property: color, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
+}
+.modal-button:hover {
+  background-color: var(--social-color);
+  transform: scale(1.02) translateY(-1px);
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

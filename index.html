@@ -595,7 +595,7 @@
         </div>
         <!-- footer socials media -->
         <div class="socialmedia-container">
-          <h2 class="subtitle title">присоединяйтесь</h2>
+          <b class="subtitle title">присоединяйтесь</b>
           <!--socialslinks-->
           <ul class="socialmedia-list list">
             <li class="socialmedia-item">
@@ -658,24 +658,31 @@
         </div>
 
         <!-- footer form -->
-        <div class="footer-form">
-          <b>Подпишитесь на рассылку</b>
-          <form action="">
-            <input type="email" name="email" placeholder="E-mail" />
-            <button type="submit">
+
+        <form class="subsribe-form" method="post" action="#">
+          <b class="subsribe-title title">Подпишитесь на рассылку</b>
+          <div class="subsribe-group">
+            <input
+              class="subsribe-field"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="subsribe-button" type="submit">
               Подписаться
-              <!-- <svg class="" width="" height="">
-                <use href=""></use>
-              </svg> -->
+              <svg class="subcribe-icon" width="24" height="24">
+                <use href="./images/icons/symbol-defs.svg#send-icon"></use>
+              </svg>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
 
     <!-- modal window -->
     <div class="back-drop is-hidden" data-modal>
-      <div class="modal">
+      <!-- modal form -->
+      <form class="modal">
         <!-- modal-close-button -->
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="18" height="18" aria-label="Закрыть">
@@ -683,50 +690,69 @@
           </svg>
         </button>
 
-        <!-- modal form -->
-        <form>
-          <p>Оставьте свои данные, мы вам перезвоним</p>
-          <ul>
-            <li>
-              <label>
-                Имя
-                <input type="text" name="name" />
-              </label>
-            </li>
-            <li>
-              <label>
-                Телефон
-                <input type="tel" name="tel" />
-              </label>
-            </li>
-            <li>
-              <label>
-                Почта
-                <input type="email" name="email" />
-              </label>
-            </li>
-            <li>
-              <label for="comment">
-                Комментарий
-                <textarea
-                  name="comment"
-                  placeholder="Введите текст"
-                  id="comment"
-                >
-                </textarea>
-              </label>
-            </li>
-            <li>
-              <label for="">
-                <input type="checkbox" name="policy" value="agree" />
-                Соглашаюсь с рассылкой и принимаю Условия договора</label
-              >
-            </li>
-          </ul>
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
+        <!-- name -->
+        <label class="modal-form-label">
+          <span class="modal-input-title">Имя</span>
+          <input class="modal-form-input" type="text" name="name" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons/symbol-defs.svg#person-black"></use>
+          </svg>
+        </label>
+
+        <!-- Phone -->
+        <label class="modal-form-label">
+          <span class="modal-input-title">Телефон</span>
+          <input class="modal-form-input" type="tel" name="tel" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons/symbol-defs.svg#phone-black"></use>
+          </svg>
+        </label>
+
+        <!-- email -->
+        <label class="modal-form-label">
+          <span class="modal-input-title">Почта</span>
+          <input class="modal-form-input" type="email" name="email" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons/symbol-defs.svg#email-black"></use>
+          </svg>
+        </label>
+
+        <!-- textarea for comment -->
+        <label class="modal-form-label" for="comment">
+          <span class="modal-input-title">Комментарий</span>
+          <textarea
+            class="modal-form-input modal-textarea"
+            name="comment"
+            placeholder="Введите текст"
+            id="comment"
+          >
+          </textarea>
+        </label>
+
+        <!-- checkbox -->
+        <label class="modal-form-label label-checkbox">
+          <input
+            class="modal-form-checkbox visually-hidden"
+            type="checkbox"
+            name="policy"
+            value="agree"
+          />
+          <span class="custom-checkbox" tabindex="0">
+            <svg class="checkbox-icon" width="16" height="15">
+              <use href="./images/icons/symbol-defs.svg#check-icon"></use>
+            </svg>
+          </span>
+          <span class="modal-chexbox-title">
+            Соглашаюсь с рассылкой и принимаю
+          </span>
+          <a class="modal-form-link" href="#">Условия договора</a>
+        </label>
+
+        <!-- button submit -->
+        <button class="modal-button" type="submit">Отправить</button>
+      </form>
     </div>
 
     <script src="./js/modal.js"></script>
